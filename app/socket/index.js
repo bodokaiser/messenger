@@ -26,7 +26,7 @@ module.exports = function(app) {
 
 function createWebSocket() {
     var path = url.format({
-        protocol: 'ws',
+        protocol: 'wss',
         host: location.host
     });
 

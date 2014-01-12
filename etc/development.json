@@ -1,11 +1,15 @@
 {
 
-    "port": 3000,
-
     "engine": {
         "builder": {
             "debug": true
         }
+    },
+
+    "server": {
+        "key": "/var/cert/dev-key.pem",
+        "cert": "/var/cert/dev-cert.pem",
+        "port": 3000
     }
 
 }

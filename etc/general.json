@@ -1,0 +1,22 @@
+{
+
+    "name": "messenger",
+
+    "static": {
+        "path": "/srv",
+        "passthrough": true
+    },
+
+    "engine": {
+        "views": {
+            "path": "/var/views"
+        },
+        "builder": {
+            "entries": [
+                "/app/index.js"
+            ],
+            "output": "/srv/javascripts/build.js"
+        }
+    }
+
+}

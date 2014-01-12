@@ -1,0 +1,36 @@
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    padding: 4px 0;
+    border: none;
+    background-color: #4A5963;
+}
+
+.navbar-brand {
+    color: #DDD !important;
+    font-weight: 100;
+}
+
+.page-header h1 {
+    font-weight: 200 !important;
+}
+
+.page-header h1 small {
+    font-weight: 100 !important;
+}
+
+.form-control[placeholder] {
+    font-weight: 200 !important;
+}
+
+.list-group-item-heading {
+    color: #333;
+    font-weight: 300;
+}
+
+.list-group-item-text {
+    color: #666;
+    font-weight: 200;
+}

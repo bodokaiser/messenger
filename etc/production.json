@@ -1,9 +1,0 @@
-{
-
-    "server": {
-        "key": "/var/cert/pro-key.pem",
-        "cert": "/var/cert/pro-cert.pem",
-        "port": 443
-    }
-
-}

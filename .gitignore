@@ -4,6 +4,9 @@
 # cert
 var/cert/pro*
 
+# conf
+etc/production.json
+
 # builds
 !srv/javascripts
 !srv/stylesheets

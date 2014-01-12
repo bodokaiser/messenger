@@ -1,6 +1,9 @@
 # logs
 *.log
 
+# cert
+var/cert/pro*
+
 # builds
 !srv/javascripts
 !srv/stylesheets

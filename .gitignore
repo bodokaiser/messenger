@@ -1,9 +1,6 @@
 # logs
 *.log
 
-# conf
-etc/production.json
-
 # builds
 !srv/javascripts
 !srv/stylesheets

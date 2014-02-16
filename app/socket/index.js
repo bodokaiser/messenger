@@ -22,12 +22,17 @@ module.exports = function(app) {
 };
 
 function createWebSocket(pathname) {
-  var path = url.format({
+  var obj = {
     protocol: 'ws',
     hostname: location.hostname,
-    pathname: pathname,
-    port: location.port
-  });
+    pathname: pathname || '/',
+  };
 
-  return new WebSocket(path);
+  if (!location.port || location.port === 80) {
+    obj.port = 443;
+  } else {
+    obj.port = location.port;
+  }
+
+  return new WebSocket(url.format(obj));
 }

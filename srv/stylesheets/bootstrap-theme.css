@@ -34,3 +34,17 @@ body {
     color: #666;
     font-weight: 200;
 }
+
+.form-control {
+  height: 40px;
+  padding: 20px 12px;
+  font-size: 16px;
+}
+
+.form-control:active,
+.form-control:focus,
+.form-control:hover {
+  border-width: 2px;
+  border-color: #4A5963;
+  box-shadow: none;
+}

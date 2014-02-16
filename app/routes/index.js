@@ -7,14 +7,20 @@ module.exports = function(app) {
     var list = new List(context.element.querySelector('ul'));
     var form = new Form(context.element.querySelector('form'));
 
+    form.on('drop', function(value) {
+      context.images.send(value);
+    });
     form.on('submit', function(value) {
-      context.events.emit('outgoing', value);
+      context.messages.send(value);
 
       form.reset();
     });
 
-    context.events.on('incoming', function(message) {
-      list.push(message);
+    context.events.on('image', function(image) {
+      list.pushImage(image);
+    });
+    context.events.on('message', function(message) {
+      list.pushMessage(message);
     });
   });
 

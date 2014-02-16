@@ -13,11 +13,14 @@ block content
     div.row
       div.col-md-8.col-md-offset-2
         ul#messages.list-group
-      div.col-md-4.col-md-offset-4
+      div.col-md-6.col-md-offset-3
         form#message.form(role='form')
           div.form-group
             input.form-control(name='message',
               placeholder='Type in your message and press enter to submit.')
+            span.help-block.text-center
+              | Optionally you can drag and drop image files on to this input
+              | field. This will broadcast the images accross all clients.
 
 block scripts
   script(src='/javascripts/build.js')

@@ -8,6 +8,6 @@ require('./event')(app);
 
 require('./socket')(app);
 
-require('./router')(app);
+require('./routes')(app);
 
 app.start();

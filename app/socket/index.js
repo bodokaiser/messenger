@@ -2,21 +2,18 @@ var url = require('url');
 
 module.exports = function(app) {
 
-  var ws = createWebSocket();
+  var images = createWebSocket('/images');
+  var messages = createWebSocket('/messages');
 
   app('*', function(context, next) {
-    ws.addEventListener('open', function(e) {
-      context.events.emit('open');
-    });
-    ws.addEventListener('close', function(e) {
-      context.events.emit('close');
-    });
-    ws.addEventListener('message', function(e) {
-      context.events.emit('incoming', JSON.parse(e.data));
-    });
+    context.images = images;
+    context.messages = messages;
 
-    context.events.on('outgoing', function(message) {
-      ws.send(message);
+    images.addEventListener('message', function(e) {
+      context.events.emit('image', e.data);
+    });
+    messages.addEventListener('message', function(e) {
+      context.events.emit('message', JSON.parse(e.data));
     });
 
     next();
@@ -24,10 +21,12 @@ module.exports = function(app) {
 
 };
 
-function createWebSocket() {
+function createWebSocket(pathname) {
   var path = url.format({
     protocol: 'ws',
-    host: location.host
+    hostname: location.hostname,
+    pathname: pathname,
+    port: location.port
   });
 
   return new WebSocket(path);

@@ -2,7 +2,7 @@ extends layout
 
 block content
   section.container
-    div.row
+    div.row.hidden-xs.hidden-sm
       div.col-md-6.col-md-offset-3
         div.page-header
           h1.text-center
@@ -18,7 +18,7 @@ block content
           div.form-group
             input.form-control(name='message',
               placeholder='Type in your message and press enter to submit.')
-            span.help-block.text-center
+            span.help-block.text-center.hidden-xs.hidden-sm
               | Optionally you can drag and drop image files on to this input
               | field. This will broadcast the images accross all clients.
 

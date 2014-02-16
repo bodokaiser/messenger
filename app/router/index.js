@@ -1,6 +1,3 @@
-var swig   = require('swig');
-var domify = require('domify');
-
 var Form = require('./form');
 var List = require('./list');
 

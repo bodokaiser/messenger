@@ -18,25 +18,25 @@
   },
 
   "dependencies": {
-    "st": "0.2.3",
+    "st": "0.2.6",
+    "page": "1.3.7",
     "jade": "1.1.5",
+    "walve": "0.0.1",
+    "lodash": "2.4.1",
+    "domify": "1.2.1",
+    "express": "3.4.8",
+    "packpath": "0.1.0",
     "jadeify": "2.1.1",
     "shortify": "0.0.2",
-    "walve": "0.0.1",
-    "page": "1.3.7",
-    "domify": "1.1.1",
-    "lodash": "2.4.1",
-    "express": "3.4.7",
     "uglifyify": "1.2.2",
-    "browserify": "3.19.1",
-    "websocket-x": "0.0.8",
-    "supervisor": "0.5.6"
+    "supervisor": "0.5.6",
+    "browserify": "3.30.0"
   },
 
   "devDependencies": {
-    "mocha": "1.16.1",
-    "should": "2.1.1",
-    "supertest": "0.8.2"
+    "chai": "1.9.0",
+    "mocha": "1.17.1",
+    "supertest": "0.9.0"
   },
 
   "repository": {

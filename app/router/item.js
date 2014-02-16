@@ -8,9 +8,9 @@ template += '<p class="list-group-item-text">{{ message.body }}</p>';
 template += '</li>';
 
 function Item(model) {
-    this.element = domify(swig.render(template, {
-        locals: { message: model }
-    }));
+  this.element = domify(swig.render(template, {
+    locals: { message: model }
+  }));
 }
 
 module.exports = Item;

@@ -1,13 +1,13 @@
 {
 
-    "engine": {
-        "builder": {
-            "debug": true
-        }
-    },
-
-    "server": {
-        "port": 3000
+  "engine": {
+    "builder": {
+      "debug": true
     }
+  },
+
+  "server": {
+    "port": 3000
+  }
 
 }

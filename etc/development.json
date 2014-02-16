@@ -7,18 +7,7 @@
     },
 
     "server": {
-        "key": "/var/cert/dev-key.pem",
-        "cert": "/var/cert/dev-cert.pem",
         "port": 3000
-    },
-
-    "security": {
-        "accounts": [
-            {
-                "username": "bodo",
-                "password": "123456"
-            }
-        ]
     }
 
 }

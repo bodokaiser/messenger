@@ -4,18 +4,22 @@
 
   "static": {
     "path": "/srv",
+    "index": false,
     "passthrough": true
   },
 
   "engine": {
     "views": {
-      "path": "/var/views"
+      "path": "/usr/views",
+      "engine": "jade"
     },
     "builder": {
-      "entries": [
-        "/app/index.js"
-      ],
-      "output": "/srv/javascripts/build.js"
+      "entry": "/app/index.js",
+      "output": "/srv/javascripts/build.js",
+      "aliases": {
+        "views": "../usr/views"
+      },
+      "extensions": [".js", ".json", ".jade"]
     }
   }
 

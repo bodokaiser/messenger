@@ -1,9 +1,9 @@
-var template = '<ul id="messages" class="list-group"></ul>';
+var template = require('../views/list');
 
 var Item = require('./item');
 
 function List(element) {
-  this.element = element || domify(template);
+  this.element = element || domify(template());
 }
 
 List.prototype.push = function(message) {

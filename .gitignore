@@ -1,9 +1,6 @@
 # logs
 *.log
 
-# cert
-var/cert/pro*
-
 # conf
 etc/production.json
 

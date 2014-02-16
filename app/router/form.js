@@ -4,7 +4,7 @@ var events = require('events');
 function Form(element) {
   this.element = element;
 
-  bindToSubmitEvent(this.element, this);
+  listenToSubmitEvent(this.element, this);
 
   events.EventEmitter.call(this);
 }
@@ -27,7 +27,7 @@ Form.prototype.reset = function() {
 
 module.exports = Form;
 
-function bindToSubmitEvent(element, view) {
+function listenToSubmitEvent(element, view) {
   element.addEventListener('submit', function(e) {
     e.preventDefault();
 

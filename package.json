@@ -25,7 +25,8 @@
         "lodash": "2.4.1",
         "express": "3.4.7",
         "browserify": "3.19.1",
-        "websocket-x": "0.0.8"
+        "websocket-x": "0.0.8",
+        "supervisor": "0.5.6"
     },
     
     "devDependencies": {

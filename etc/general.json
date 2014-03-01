@@ -3,9 +3,7 @@
   "name": "messenger",
 
   "static": {
-    "path": "/srv",
-    "index": false,
-    "passthrough": true
+    "path": "/srv"
   },
 
   "engine": {

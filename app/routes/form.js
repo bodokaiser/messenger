@@ -37,12 +37,12 @@ function listenToDropEvent(element, view) {
     lodash.forEach(e.dataTransfer.files, function(file) {
       if (!file.type.match(/image.*/)) return;
 
-      var reader = new FileReader();
+var reader = new FileReader();
 
-      reader.addEventListener('load', function(e) {
-        view.emit('drop', e.target.result);
-      });
-      reader.readAsDataURL(file);
+reader.addEventListener('load', function(e) {
+  view.emit('drop', e.target.result);
+});
+reader.readAsDataURL(file);
     });
   });
 }

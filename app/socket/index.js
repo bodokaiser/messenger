@@ -26,7 +26,7 @@ function createWebSocket(pathname) {
     protocol: 'ws',
     pathname: pathname || '/',
     hostname: location.hostname,
-    port: location.port || 443
+    port: location.port || 8443
   };
 
   return new WebSocket(url.format(object));

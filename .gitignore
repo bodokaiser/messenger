@@ -2,8 +2,8 @@
 *.log
 
 # builds
-srv/javascripts
-srv/stylesheets
+srv/javascripts/build.js
+srv/stylesheets/build.js
 
 # temporary
 *.swp

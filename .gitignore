@@ -2,8 +2,7 @@
 *.log
 
 # builds
-srv/javascripts
-srv/stylesheets
+srv/javascripts/build.js
 
 # temporary
 *.swp

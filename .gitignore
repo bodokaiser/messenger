@@ -3,7 +3,6 @@
 
 # builds
 srv/javascripts/build.js
-srv/stylesheets/build.js
 
 # temporary
 *.swp
